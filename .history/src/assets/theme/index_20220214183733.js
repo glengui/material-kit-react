@@ -84,74 +84,10 @@ import dialogContent from "assets/theme/components/dialog/dialogContent";
 import dialogContentText from "assets/theme/components/dialog/dialogContentText";
 import dialogActions from "assets/theme/components/dialog/dialogActions";
 
-const ctheme = createTheme({
-  palette: {
-    type: "light",
-    primary: {
-      main: "#008e48",
-    },
-    secondary: {
-      main: "#ef0000",
-    },
-  },
-  typography: {
-    caption: {
-      fontSize: "1rem",
-    },
-  },
-  props: {
-    MuiButton: {
-      size: "small",
-    },
-    MuiButtonGroup: {
-      size: "small",
-    },
-    MuiCheckbox: {
-      size: "small",
-    },
-    MuiFab: {
-      size: "small",
-    },
-    MuiFormControl: {
-      margin: "dense",
-      size: "small",
-    },
-    MuiFormHelperText: {
-      margin: "dense",
-    },
-    MuiIconButton: {
-      size: "small",
-    },
-    MuiInputBase: {
-      margin: "dense",
-    },
-    MuiInputLabel: {
-      margin: "dense",
-    },
-    MuiRadio: {
-      size: "small",
-    },
-    MuiSwitch: {
-      size: "small",
-    },
-    MuiTextField: {
-      margin: "dense",
-      size: "small",
-    },
-    MuiTooltip: {
-      arrow: true,
-    },
-  },
-  spacing: 8,
-  shape: {
-    borderRadius: 4,
-  },
-});
-
 export default createTheme({
   breakpoints: { ...breakpoints },
-  palette: { ...ctheme.palette },
-  typography: { ...ctheme.typography },
+  palette: { ...colors },
+  typography: { ...typography },
   boxShadows: { ...boxShadows },
   borders: { ...borders },
   functions: {

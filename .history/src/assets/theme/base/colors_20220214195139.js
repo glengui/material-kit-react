@@ -19,8 +19,6 @@ Coded by www.creative-tim.com
  * You can customized the colors for the entire Material Kit 2 React using thie file.
  */
 
-
-
 export default {
   background: {
     default: "#f0f2f5",

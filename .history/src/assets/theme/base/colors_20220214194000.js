@@ -19,16 +19,14 @@ Coded by www.creative-tim.com
  * You can customized the colors for the entire Material Kit 2 React using thie file.
  */
 
-
-
 export default {
   background: {
     default: "#f0f2f5",
   },
 
   text: {
-    main: "#7b809a",
-    focus: "#7b809a",
+    main: "#FFFFFF",
+    focus: "#FFFFFF",
   },
 
   transparent: {
@@ -47,28 +45,28 @@ export default {
   },
 
   primary: {
-    main: "#e91e63",
-    focus: "#e91e63",
+    main: "#008e48",
+    focus: "#008e48",
   },
 
   secondary: {
-    main: "#7b809a",
-    focus: "#8f93a9",
+    main: "#e80e10",
+    focus: "#ad0000",
   },
 
   info: {
-    main: "#1A73E8",
-    focus: "#1662C4",
+    main: "#2196F3",
+    focus: "#1976D2",
   },
 
   success: {
-    main: "#4CAF50",
+    main: "#003f00",
     focus: "#67bb6a",
   },
 
   warning: {
-    main: "#fb8c00",
-    focus: "#fc9d26",
+    main: "#ff583d",
+    focus: "#ff583d",
   },
 
   error: {
@@ -245,7 +243,7 @@ export default {
   },
 
   coloredShadows: {
-    primary: "#e91e62",
+    primary: "#003f00",
     secondary: "#110e0e",
     info: "#00bbd4",
     success: "#4caf4f",
@@ -255,7 +253,7 @@ export default {
     dark: "#404040",
   },
 
-  inputBorderColor: "#d2d6da",
+  inputBorderColor: "#000000",
 
   tabs: {
     indicator: { boxShadow: "#ddd" },

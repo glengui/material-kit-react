@@ -19,16 +19,14 @@ Coded by www.creative-tim.com
  * You can customized the colors for the entire Material Kit 2 React using thie file.
  */
 
-
-
 export default {
   background: {
     default: "#f0f2f5",
   },
 
   text: {
-    main: "#7b809a",
-    focus: "#7b809a",
+    main: "#000000",
+    focus: "#000000",
   },
 
   transparent: {
@@ -47,28 +45,28 @@ export default {
   },
 
   primary: {
-    main: "#e91e63",
-    focus: "#e91e63",
+    main: "#1b5e20",
+    focus: "#1b5e20",
   },
 
   secondary: {
-    main: "#7b809a",
-    focus: "#8f93a9",
+    main: "#2e7d32",
+    focus: "#2e7d32",
   },
 
   info: {
-    main: "#1A73E8",
-    focus: "#1662C4",
+    main: "#2196F3",
+    focus: "#1976D2",
   },
 
   success: {
-    main: "#4CAF50",
+    main: "#003f00",
     focus: "#67bb6a",
   },
 
   warning: {
-    main: "#fb8c00",
-    focus: "#fc9d26",
+    main: "#FF9800",
+    focus: "#f57c00",
   },
 
   error: {
@@ -77,13 +75,13 @@ export default {
   },
 
   light: {
-    main: "#f0f2f5",
-    focus: "#f0f2f5",
+    main: "#33A46C",
+    focus: "#33A46C",
   },
 
   dark: {
-    main: "#344767",
-    focus: "#2c3c58",
+    main: "#A70000",
+    focus: "#A70000",
   },
 
   grey: {
@@ -100,8 +98,8 @@ export default {
 
   gradients: {
     primary: {
-      main: "#EC407A",
-      state: "#D81B60",
+      main: "#29C635",
+      state: "#006214",
     },
 
     secondary: {
@@ -125,8 +123,8 @@ export default {
     },
 
     error: {
-      main: "#EF5350",
-      state: "#E53935",
+      main: "#f44336",
+      state: "#d32f2f",
     },
 
     light: {
@@ -245,7 +243,7 @@ export default {
   },
 
   coloredShadows: {
-    primary: "#e91e62",
+    primary: "#003f00",
     secondary: "#110e0e",
     info: "#00bbd4",
     success: "#4caf4f",
@@ -255,7 +253,7 @@ export default {
     dark: "#404040",
   },
 
-  inputBorderColor: "#d2d6da",
+  inputBorderColor: "#000000",
 
   tabs: {
     indicator: { boxShadow: "#ddd" },
