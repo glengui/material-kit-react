@@ -86,7 +86,15 @@ import dialogActions from "assets/theme/components/dialog/dialogActions";
 
 export default createTheme({
   breakpoints: { ...breakpoints },
-  palette: { ...colors },
+  palette: {
+    type: "light",
+    primary: {
+      main: "#008e48",
+    },
+    secondary: {
+      main: "#ef0000",
+    },
+  },
   typography: { ...typography },
   boxShadows: { ...boxShadows },
   borders: { ...borders },
