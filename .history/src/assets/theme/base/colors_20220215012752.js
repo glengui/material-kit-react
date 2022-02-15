@@ -123,10 +123,6 @@ export default {
       main: "#747b8a",
       state: "#495361",
     },
-    green: {
-      main: "#43A047",
-      state: "#1B5E20",
-    },
 
     info: {
       main: "#49a3f1",

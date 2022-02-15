@@ -21,12 +21,12 @@ import Card from "@mui/material/Card";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-//  import MKSocialButton from "components/MKSocialButton";
+import MKSocialButton from "components/MKSocialButton";
 
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-//  import DefaultFooter from "examples/Footers/DefaultFooter";
-//  import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
+import DefaultFooter from "examples/Footers/DefaultFooter";
+import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
 //  import Counters from "pages/Presentation/sections/Counters";
@@ -41,7 +41,7 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
 // Routes
 import routes from "routes";
-//  import footerRoutes from "footer.routes";
+import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/bg-presentation.jpg";
@@ -49,7 +49,16 @@ import bgImage from "assets/images/bg-presentation.jpg";
 function Presentation() {
   return (
     <>
-      <DefaultNavbar routes={routes} sticky />
+      <DefaultNavbar
+        routes={routes}
+        action={{
+          type: "internal",
+          route: "/",
+          label: "home",
+          color: "white",
+        }}
+        sticky
+      />
       <MKBox
         minHeight="75vh"
         width="100%"
@@ -62,19 +71,19 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto" bgColor="primary">
+          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
             <MKTypography
-              variant="h2"
+              variant="h1"
               color="white"
               mt={-6}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
-                  fontSize: size["2xl"],
+                  fontSize: size["3xl"],
                 },
               })}
             >
-              Castrol App{" "}
+              Material Kit 2 React{" "}
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -83,7 +92,8 @@ function Presentation() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              ES MÁS QUE SÓLO ACEITE, ES INGENIERÍA LÍQUIDA.
+              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
+              developers around the world.
             </MKTypography>
           </Grid>
         </Container>
@@ -105,7 +115,7 @@ function Presentation() {
         <Pages />
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
-        </Container> 
+        </Container> */}
         <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>
@@ -150,7 +160,7 @@ function Presentation() {
             </Grid>
           </Grid>
         </Container>
-        <Testimonials />
+        {/*         <Testimonials />
         <Download /> */}
         <MKBox pt={18} pb={6}>
           <Container>
@@ -163,7 +173,7 @@ function Presentation() {
                   We deliver the best web products
                 </MKTypography>
               </Grid>
-              {/* <Grid
+              <Grid
                 item
                 xs={12}
                 lg={5}
@@ -200,14 +210,14 @@ function Presentation() {
                   <i className="fab fa-pinterest" />
                   &nbsp;Pin it
                 </MKSocialButton>
-              </Grid> */}
+              </Grid>
             </Grid>
           </Container>
         </MKBox>
       </Card>
-      {/*       <MKBox pt={6} px={1} mt={6}>
+      <MKBox pt={6} px={1} mt={6}>
         <DefaultFooter content={footerRoutes} />
-      </MKBox> */}
+      </MKBox>
     </>
   );
 }

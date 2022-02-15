@@ -36,14 +36,14 @@ import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 
 // Material Kit 2 React example components
-// import DefaultNavbar from "examples/Navbars/DefaultNavbar";
+import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 //  import SimpleFooter from "examples/Footers/SimpleFooter";
 
 // Material Kit 2 React page layout routes
-// import routes from "routes";
+import routes from "routes";
 
 // Images
-import bgImage from "assets/images/rotating-card-bg-front.jpeg";
+import bgImage from "assets/images/bg-sign-in-basic.jpeg";
 //  import { green } from "@mui/material/colors";
 
 function SignInBasic() {
@@ -159,8 +159,8 @@ function SignInBasic() {
         position="absolute"
         zIndex={2}
         textAlign="center"
-        color="white"
         bottom="1.625rem"
+        sx={{ cursor: "pointer", userSelect: "none", ml: -1 }}
       >
         © 2022 CASTROL LIMITED
         {/* <SimpleFooter light /> */}

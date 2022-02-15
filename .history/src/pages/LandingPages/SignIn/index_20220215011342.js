@@ -22,7 +22,7 @@ import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import Switch from "@mui/material/Switch";
 import Grid from "@mui/material/Grid";
-//  import MuiLink from "@mui/material/Link";
+import MuiLink from "@mui/material/Link";
 
 // @mui icons
 /* import FacebookIcon from "@mui/icons-material/Facebook";
@@ -36,15 +36,14 @@ import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 
 // Material Kit 2 React example components
-// import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-//  import SimpleFooter from "examples/Footers/SimpleFooter";
+import DefaultNavbar from "examples/Navbars/DefaultNavbar";
+import SimpleFooter from "examples/Footers/SimpleFooter";
 
 // Material Kit 2 React page layout routes
-// import routes from "routes";
+import routes from "routes";
 
 // Images
-import bgImage from "assets/images/rotating-card-bg-front.jpeg";
-//  import { green } from "@mui/material/colors";
+import bgImage from "assets/images/bg-sign-in-basic.jpeg";
 
 function SignInBasic() {
   const [rememberMe, setRememberMe] = useState(false);
@@ -53,7 +52,7 @@ function SignInBasic() {
 
   return (
     <>
-      {/* <DefaultNavbar routes={routes} primary /> */}
+      <DefaultNavbar routes={routes} light />
       <MKBox
         position="absolute"
         top={0}
@@ -78,7 +77,7 @@ function SignInBasic() {
             <Card>
               <MKBox
                 variant="gradient"
-                bgColor="success"
+                bgColor="primary"
                 borderRadius="lg"
                 coloredShadow="primary"
                 mx={2}
@@ -87,10 +86,10 @@ function SignInBasic() {
                 mb={1}
                 textAlign="center"
               >
-                <MKTypography variant="h3" fontWeight="medium" color="white" mt={1}>
+                <MKTypography variant="h4" fontWeight="medium" color="white" mt={1}>
                   Ingresar
                 </MKTypography>
-                {/* <Grid container spacing={3} justifyContent="center" sx={{ mt: 1, mb: 2 }}>
+                <Grid container spacing={3} justifyContent="center" sx={{ mt: 1, mb: 2 }}>
                   <Grid item xs={2}>
                     <MKTypography component={MuiLink} href="#" variant="body1" color="white">
                       <FacebookIcon color="inherit" />
@@ -106,7 +105,7 @@ function SignInBasic() {
                       <GoogleIcon color="inherit" />
                     </MKTypography>
                   </Grid>
-                </Grid> */}
+                </Grid>
               </MKBox>
               <MKBox pt={4} pb={3} px={3}>
                 <MKBox component="form" role="form">
@@ -125,26 +124,26 @@ function SignInBasic() {
                       onClick={handleSetRememberMe}
                       sx={{ cursor: "pointer", userSelect: "none", ml: -1 }}
                     >
-                      &nbsp;&nbsp;Recordarme
+                      &nbsp;&nbsp;Remember me
                     </MKTypography>
                   </MKBox>
                   <MKBox mt={4} mb={1}>
-                    <MKButton variant="gradient" color="success" fullWidth>
-                      Entrar
+                    <MKButton variant="gradient" color="info" fullWidth>
+                      sign in
                     </MKButton>
                   </MKBox>
                   <MKBox mt={3} mb={1} textAlign="center">
                     <MKTypography variant="button" color="text">
-                      No tienes cuenta?{" "}
+                      Don&apos;t have an account?{" "}
                       <MKTypography
                         component={Link}
                         to="/authentication/sign-up/cover"
                         variant="button"
-                        color="primary"
+                        color="info"
                         fontWeight="medium"
                         textGradient
                       >
-                        Registrate
+                        Sign up
                       </MKTypography>
                     </MKTypography>
                   </MKBox>
@@ -154,16 +153,8 @@ function SignInBasic() {
           </Grid>
         </Grid>
       </MKBox>
-      <MKBox
-        width="100%"
-        position="absolute"
-        zIndex={2}
-        textAlign="center"
-        color="white"
-        bottom="1.625rem"
-      >
-        © 2022 CASTROL LIMITED
-        {/* <SimpleFooter light /> */}
+      <MKBox width="100%" position="absolute" zIndex={2} bottom="1.625rem">
+        <SimpleFooter light />
       </MKBox>
     </>
   );

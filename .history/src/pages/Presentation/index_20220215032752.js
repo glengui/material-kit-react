@@ -62,10 +62,11 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto" bgColor="primary">
+          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
             <MKTypography
               variant="h2"
               color="white"
+              bgColor="primary"
               mt={-6}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({

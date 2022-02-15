@@ -26,7 +26,7 @@ import MKTypography from "components/MKTypography";
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 //  import DefaultFooter from "examples/Footers/DefaultFooter";
-//  import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
+import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
 //  import Counters from "pages/Presentation/sections/Counters";
@@ -62,29 +62,42 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto" bgColor="primary">
-            <MKTypography
-              variant="h2"
-              color="white"
-              mt={-6}
-              mb={1}
-              sx={({ breakpoints, typography: { size } }) => ({
-                [breakpoints.down("md")]: {
-                  fontSize: size["2xl"],
-                },
-              })}
+          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+            <MKBox
+              sx={{
+                p: 2,
+                mx: { xs: 2, lg: 3 },
+                mt: -8,
+                mb: 4,
+                backgroundColor: ({ palette: { white }, functions: { rgba } }) =>
+                  rgba(white.main, 0.8),
+                backdropFilter: "saturate(200%) blur(30px)",
+                boxShadow: ({ boxShadows: { xxl } }) => xxl,
+              }}
             >
-              Castrol App{" "}
-            </MKTypography>
-            <MKTypography
-              variant="body1"
-              color="white"
-              textAlign="center"
-              px={{ xs: 6, lg: 12 }}
-              mt={1}
-            >
-              ES MÁS QUE SÓLO ACEITE, ES INGENIERÍA LÍQUIDA.
-            </MKTypography>
+              <MKTypography
+                variant="h1"
+                color="white"
+                mt={-6}
+                mb={1}
+                sx={({ breakpoints, typography: { size } }) => ({
+                  [breakpoints.down("md")]: {
+                    fontSize: size["3xl"],
+                  },
+                })}
+              >
+                Castrol App{" "}
+              </MKTypography>
+              <MKTypography
+                variant="body1"
+                color="white"
+                textAlign="center"
+                px={{ xs: 6, lg: 12 }}
+                mt={1}
+              >
+                ES MÁS QUE SÓLO ACEITE, ES INGENIERÍA LÍQUIDA.
+              </MKTypography>
+            </MKBox>
           </Grid>
         </Container>
       </MKBox>
@@ -105,7 +118,7 @@ function Presentation() {
         <Pages />
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
-        </Container> 
+        </Container> */}
         <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>
@@ -150,7 +163,7 @@ function Presentation() {
             </Grid>
           </Grid>
         </Container>
-        <Testimonials />
+        {/*                 <Testimonials />
         <Download /> */}
         <MKBox pt={18} pb={6}>
           <Container>

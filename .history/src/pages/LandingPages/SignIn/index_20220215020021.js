@@ -43,7 +43,7 @@ import MKButton from "components/MKButton";
 // import routes from "routes";
 
 // Images
-import bgImage from "assets/images/rotating-card-bg-front.jpeg";
+import bgImage from "assets/images/bg-sign-in-basic.jpeg";
 //  import { green } from "@mui/material/colors";
 
 function SignInBasic() {

@@ -43,7 +43,7 @@ import MKButton from "components/MKButton";
 // import routes from "routes";
 
 // Images
-import bgImage from "assets/images/rotating-card-bg-front.jpeg";
+import bgImage from "assets/images/bg-sign-in-basic.jpeg";
 //  import { green } from "@mui/material/colors";
 
 function SignInBasic() {
@@ -154,14 +154,7 @@ function SignInBasic() {
           </Grid>
         </Grid>
       </MKBox>
-      <MKBox
-        width="100%"
-        position="absolute"
-        zIndex={2}
-        textAlign="center"
-        color="white"
-        bottom="1.625rem"
-      >
+      <MKBox width="100%" position="absolute" zIndex={2} textAlign="center" bottom="1.625rem">
         © 2022 CASTROL LIMITED
         {/* <SimpleFooter light /> */}
       </MKBox>

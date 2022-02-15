@@ -62,7 +62,8 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto" bgColor="primary">
+          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+
             <MKTypography
               variant="h2"
               color="white"
@@ -85,6 +86,7 @@ function Presentation() {
             >
               ES MÁS QUE SÓLO ACEITE, ES INGENIERÍA LÍQUIDA.
             </MKTypography>
+
           </Grid>
         </Container>
       </MKBox>

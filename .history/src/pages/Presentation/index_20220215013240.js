@@ -26,7 +26,7 @@ import MKTypography from "components/MKTypography";
 // Material Kit 2 React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 //  import DefaultFooter from "examples/Footers/DefaultFooter";
-//  import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
+import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
 //  import Counters from "pages/Presentation/sections/Counters";
@@ -62,15 +62,15 @@ function Presentation() {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto" bgColor="primary">
+          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
             <MKTypography
-              variant="h2"
+              variant="h1"
               color="white"
               mt={-6}
               mb={1}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
-                  fontSize: size["2xl"],
+                  fontSize: size["3xl"],
                 },
               })}
             >
@@ -105,7 +105,7 @@ function Presentation() {
         <Pages />
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
-        </Container> 
+        </Container> */}
         <Container>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={4}>
@@ -150,7 +150,7 @@ function Presentation() {
             </Grid>
           </Grid>
         </Container>
-        <Testimonials />
+        {/*                 <Testimonials />
         <Download /> */}
         <MKBox pt={18} pb={6}>
           <Container>

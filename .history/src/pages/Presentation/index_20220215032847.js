@@ -41,7 +41,7 @@ import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 
 // Routes
 import routes from "routes";
-//  import footerRoutes from "footer.routes";
+import footerRoutes from "footer.routes";
 
 // Images
 import bgImage from "assets/images/bg-presentation.jpg";
